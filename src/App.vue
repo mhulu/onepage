@@ -26,6 +26,7 @@
 
   <script>
     import * as validator from './validator'
+    import {API_ROOT} from './config.js'
     export default {
       data: function () {
         return {
@@ -39,7 +40,7 @@
       },
       methods: {
         onSubmit: function () {
-          this.$http.post('http://temp.app/api/guestbook', {phone: this.phone, comment: this.comment}).then((response) => {
+          this.$http.post(API_ROOT + 'guestbook', {phone: this.phone, comment: this.comment}).then((response) => {
             this.isPersist = true
             this.tips = response.body
             this.result = '感谢您对我们工作的关注与支持！我们会在第一时间认真研究您的反馈，并综合实际情况进行下一步的工作。再次感谢您！'
