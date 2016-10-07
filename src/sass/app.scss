@@ -1,0 +1,57 @@
+@import './base';
+@import './animate';
+body {
+  background-color:#242333;
+}
+article {
+  text-indent: 2em;
+}
+[v-cloak] {
+  display: none;
+}
+.margin-top-15 {
+  margin-top:15px;
+}
+
+.vcenter {
+    min-height: 100%;
+    min-height: 100vh;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.text-success {
+  color: #1abc9c;
+}
+.text-error {
+  color: #c15376;
+}
+.text-brown {
+  color:#ccc;
+}
+.text-center {
+  text-align: center;
+}
+.flag{
+  display: inline-block;
+    height: 2em;
+    border-top-width: 1.1em;
+    border-top-style: solid;
+    border-top-color: rgb(193, 83, 118);
+    border-bottom-width: 1.1em;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(193, 83, 118);
+    line-height: 1;
+    box-sizing: border-box;
+    border-right-width: 1em !important;
+    border-right-style: solid !important;
+    border-right-color: transparent !important;
+    margin-bottom: 15px; 
+}
+ul {
+  list-style-type: none;
+}
